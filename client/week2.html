@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="weeks.html"></a>
+    </nav>
+    <div> Week 2
+<div>do you know as much as a 2nd week coding student?</div>
+<p>filler text</p>
+    </div>
+
+  <div> <h2>FIND LUCKY NUMBERS</h2>
+    <section class="Instructions">
+        Given a number, n, return an array containing n unique random numbers between 1-10, inclusive. (That is, do not repeat any numbers in the returned list.)
+
+You can trust that this function will never be called with n &lt; 0 or n > 10.
+
+For example:
+
+luckyNumbers(2)
+// returns (3, 7)
+luckyNumbers(6)
+// returns (1, 7, 9, 6, 5, 2)
+    </section>
+
+    <section class="Solution">
+let x = 1
+let y = 2
+
+function findLuckyNumbers(n) {
+  let possibleNumbers = [1,2,3,4,5,6,7,8,9,10]
+  let luckyNumbers = []
+  for (let i = 0; i < n; i++) {
+    let x = Math.floor(Math.random() * possibleNumbers.length);
+    luckyNumbers.push(possibleNumbers[x])
+    possibleNumbers.splice(x, 1)
+  }
+  return luckyNumbers
+}
+    </section>
+
+  </div>
+
+  <button>Add to List</button>
+  <section class="additional">
+   <p>
+    <a href="https://www.codewars.com/kata/58261acb22be6e2ed800003a">Volume of a Cuboid</a>
+</p>
+
+<p>
+<a href="https://www.codewars.com/kata/5834fec22fb0ba7d080000e8">BASIC: Making Six Toast.</a>
+</p>
+
+<section> Addtional Resources
+    <p></p>
+</section>
+
+</section>
+
+</body>
+</html>

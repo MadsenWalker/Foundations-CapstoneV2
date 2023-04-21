@@ -1,0 +1,177 @@
+.content {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.Instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #1078a7;
+    border: 2px solid black;
+    box-sizing: content-box 5px;
+    width: 40%;
+    height: 100%;
+    margin: 5%;
+    padding: 20px;
+    color: aliceblue;
+    
+}
+
+ .Instructions :first-child {  padding: 5px 15px 5px;
+  padding-left: 15px;
+  width: calc(100% + 15px);
+  margin: -15px -15px 0 -15px;
+  background-color: rgb(39, 39, 39);
+  color: white;
+ }
+ 
+.Solution:hover {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s, visibility 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(50, 50, 50);
+    box-sizing: content-box 5px;
+     width: 40%;
+     height: 100%;
+    margin: 5%;
+    padding: 20px;
+    color: aliceblue;
+}
+.Solution :first-child {
+    padding: 5px 15px;
+  padding-left: 15px;
+  width: calc(100% + 15px);
+  margin: -15px -15px 0 -15px;
+  background-color: #1078a7;
+  color: white;
+}
+.Solution :second-child {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+
+}
+
+.week {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    text-align: center;
+    border: 20px;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+    margin: 25px;
+    
+    
+}
+
+.introline{
+    text-align: center;
+    border: 20px;
+    color: #ffffff;
+    font-family: '', sans-serif;
+    font-style: oblique;
+    font-weight: lighter;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:#1078a7;
+}
+
+.additional{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+body{
+    margin: 10px;
+    background-image: url(images/bk-02.jpg); no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.card{
+    margin: 50px;
+}
+
+h5{
+    color: white;
+    text-align: center;
+}
+
+#learning-container{
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+    }
+
+  .Introduction {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+
+.writing {
+        overflow: hidden; 
+        border-right: .15em solid rgb(255, 255, 255);
+        white-space: wrap; 
+        margin: auto; 
+        letter-spacing: .15em;
+        animation-delay: 1s;
+        animation:
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+          color: white;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 10% }
+        to { width: 80% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: rgb(255, 255, 255); }
+      }
+      
+      .tagline {
+        color: white;
+        display: block;
+        text-align: center;
+        width: 100%;
+
+      }
+     

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="node_modules/xterm/css/xterm.css" />
+    <script src="node_modules/xterm/lib/xterm.js"></script> -->
+    
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="learnlist.html">Learn List</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Where To?
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            
+            <li><a class="dropdown-item" href="week2.html">Week 2</a></li>
+            <li><a class="dropdown-item" href="week3.html">Week 3</a></li>
+            <li><a class="dropdown-item" href="week4.html">Week 4</a></li>
+            <li><a class="dropdown-item" href="week5.html">Week 5</a></li>
+            <li><a class="dropdown-item" href="week6.html">Week 6</a></li>
+            <li><a class="dropdown-item" href="week7.html">Week 7</a></li>
+            <li><a class="dropdown-item" href="week8.html">Week 8</a></li>
+            
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="learnlist.html">Learn List</a></li>
+            <li><a class="dropdown-item" href="weeks.html">Weeks</a></li>
+            <li><a class="dropdown-item" href="tools.html">Tools</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div class="week"> <h1>WEEK 1</h1>
+<div class="introline">Do you know as much as a 1st week coding student?</div>
+<p>In the first week of a DevMountain bootcamp, you are going to get a download of tons of information! From new applications to use and basic Javascript fundamentals. Take a look below and see how you (full)Stack up against a week 1 coding challenge</p>
+    </div>
+
+<h4 class="challengeName">MAX OF TWO</h4>
+<section class="descriptors">
+  
+  
+</section>
+
+  <div class="content"> 
+    <section class="Instructions">
+      <h5>Instructions</h5>
+       <p> Given the starting code of:</p>
+       <p>
+<code>
+x = 1
+y = 2
+</code>
+</p>
+Write a block of code that will print out the largest value.
+
+Using the given values as an example, your code should print out 2.
+
+To verify your code is working properly, try and change the values of x and y.
+
+As an additional challenge, print out The values are identical. if x and y have the same value.
+    </section>
+
+    
+    <div class="Solution">
+      <h5>Solution</h5>
+      <p>
+let x = 1
+let y = 2
+</p>
+
+<p class="code">
+if (x > y) {
+  console.log(x)
+} else {
+  console.log(y)
+}
+</p>
+<p class="pseudo">
+// Solution to additional challenge:
+</p>
+<p>
+if (x > y) {
+  console.log(x)
+} else if (y > x) {
+  console.log(y)
+} else {
+  console.log('The values are identical.')
+}
+</p>
+    </div>
+
+  </div>
+
+  <section class="additional">
+  <section>
+    <div class="card" style="width: 18rem;">
+  <img src="./images/coding_8kyu.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Remove First and Last Letter</h5>
+    <p class="card-text">Your goal is to create a function that removes the first and last characters of a string</p>
+    <a href="https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0" class="btn btn-primary stretched-link">Try it out!</a>
+    </div>
+    </section>
+
+    <section>
+    <div class="card" style="width: 18rem;">
+  <img src="./images/coding_8kyu.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Miles per gallon to kilometers per liter</h5>
+    <p class="card-text">Answer will display the number of kilometers per liter, based on the number of miles per gallon.</p>
+    <a href="https://www.codewars.com/kata/557b5e0bddf29d861400005d" class="btn btn-primary stretched-link">Try it out!</a>
+  </section>
+</div>
+   
+<section>
+  <H5>Add a problem to your learn list!</H5>
+<input id="problem"  type="text" placeholder="problem name">
+<input id="difficulty" type="text" placeholder="difficulty">
+<input id="link" type="text" placeholder="code wars link">
+<button id="customBtn">Add to List</button>
+</section>
+<section> Addtional Resources
+    <p></p>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/axios@1.3.5/dist/axios.min.js"></script>
+<script src="weekone.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
